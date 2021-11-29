@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: 3px solid black;
+    color: rgb(224, 211, 211);
+    border: none;
+    outline: none;
+    background-color: rgb(241, 157, 157);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+}
+
+.btn:hover {
+    color: rgb(247, 236, 236);
+    background-color: black;
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+}
+
+#currentweathercontainer {
+    display: flex;
+}
+
+.text {
+    font-size: 15px;
+}
+
+.forecast-container {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: #22d8ab;
+    margin-left: 5%;
+    width: 50%;
+    border-radius: 5px solid black;
+}
