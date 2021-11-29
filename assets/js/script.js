@@ -84,6 +84,10 @@ var currentWeather = function(data) {
     city.append(Image);
     weatherContainer.append(cityDetails);
 
+    var cityInfo = document.createElement("p");
+    cityInfo.innerHTML = moment().format("MMM Do YY");
+    cityDetails.append(cityInfo);
+
 
     var cityInfo = document.createElement("p");
     cityInfo.innerHTML = "Temperature: " + data.main.temp + " °F";
@@ -168,6 +172,9 @@ var fiveDay = function(forecastData) {
 
         forecastContainer.append(cardEl);
 
+        var forecastInfo = document.createElement("p");
+        forecastInfo.innerHTML = moment().day(i);
+        cardEl.append(forecastInfo);
 
 
 
