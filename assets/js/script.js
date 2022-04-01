@@ -55,7 +55,7 @@ var getUserInput = function(input) {
             alert("Unable to connect");
         });
 
-    if (!cityHistory.includes(input)) {
+    if (cityHistory.includes(input)) {
         cityHistory.push(input);
         var cities = document.createElement("li");
         cities.classList = "list-group-item col-6 bg-info";
