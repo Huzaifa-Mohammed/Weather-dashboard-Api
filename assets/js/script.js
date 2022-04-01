@@ -44,6 +44,10 @@ var getUserInput = function(input) {
                         currentWeather(data);
 
                     })
+            } else {
+
+                NoCityFound()
+                return;
             }
         })
         .catch(function(error) {
@@ -64,6 +68,14 @@ var getUserInput = function(input) {
     console.log(cityHistory);
 
 
+
+
+}
+
+function NoCityFound() {
+    console.log("no city found")
+    alert("No city found by that name. Try again!!")
+    nameInputEl.value = "";
 
 
 }
